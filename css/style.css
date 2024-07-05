@@ -20,8 +20,8 @@ ul {
 }
 
 .container {
-  padding: 0 15px 0 15px;
-  margin: 0 auto 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -42,4 +42,5 @@ ul {
   }
 }
 
-/* ============================== */
+/* ! - ======================= - ! */
+
