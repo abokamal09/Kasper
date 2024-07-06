@@ -1,3 +1,9 @@
+/* ! - ========= Var ========= - ! */
+:root {
+  --main-color: #19c8fa;
+}
+/* ! - ======================= - ! */
+
 /* ! -  ==== Global Rules ==== - ! */
 * {
   -webkit-box-sizing: border-box;
@@ -13,6 +19,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: black; /* for some time */
 }
 
 ul {
@@ -44,3 +51,70 @@ ul {
 
 /* ! - ======================= - ! */
 
+/* ! - ======= Header ======== - ! */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .container::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: calc(100% - 30px);
+  right: 15px;
+  bottom: 0;
+  background-color: #a2a2a2;
+  z-index: -1;
+}
+
+header .logo img {
+  height: 40px;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul a {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  transition: 0.3s;
+  padding: 40px 10px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+header nav ul a.active,
+header nav ul a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+header nav .form {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  border-left: 1px solid white;
+  margin-left: 10px;
+}
+
+header nav .form i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+/* ! - ======================= - ! */
